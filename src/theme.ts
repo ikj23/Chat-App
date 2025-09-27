@@ -13,7 +13,7 @@ const theme = createTheme({
     },
     background: {
       default: 'transparent',
-      paper: 'rgba(40, 42, 54, 0.6)',
+      paper: 'rgba(40, 42, 54, 0.75)', // Made slightly more opaque
     },
     text: {
       primary: '#f8f8f2',
@@ -28,6 +28,17 @@ const theme = createTheme({
     },
   },
   components: {
+    // THIS 'COMPONENTS' SECTION IS UPDATED
+    MuiListItemText: {
+      styleOverrides: {
+        primary: {
+          color: '#f8f8f2', // Ensure primary list text is light
+        },
+        secondary: {
+          color: '#a9a9a9', // A clear but subtle grey for secondary text
+        },
+      }
+    },
     MuiPaper: {
       styleOverrides: {
         root: {
