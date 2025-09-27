@@ -1,0 +1,33 @@
+/* src/index.css */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* --- ADD THIS FOR THE ANIMATED GRADIENT --- */
+  background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: white; /* Set a default text color that works with the dark background */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
